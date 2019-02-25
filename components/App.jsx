@@ -67,6 +67,7 @@ var App = React.createClass({
           Znajdź gifa na <a href="http://giphy.com"> giphy </a> .Naciskaj
           enter,aby pobrać kolejne gify.
         </p>
+        ,
         <Search onSearch={this.handleSearch} />
         <Gif
           loading={this.state.loading}
