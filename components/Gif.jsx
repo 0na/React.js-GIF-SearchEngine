@@ -4,7 +4,7 @@ var styles = {
   margin: "0.5em"
 };
 
-var Gif = React.createClass({
+Gif = React.createClass({
   getUrl: function(url) {
     return this.props.sourceUrl || GIPHY_LOADING_URL; // do gifa sygnalizującego ładowanie (jeśli nie znajdzie tego pierwszego):
   },

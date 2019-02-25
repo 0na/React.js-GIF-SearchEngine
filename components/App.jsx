@@ -2,7 +2,7 @@
 var GIPHY_PUB_KEY = "Yoouazi2G1SlnVS2Cirm0RreyDqDmtD2";
 var GIPHY_API_URL = "https://api.giphy.com/v1/";
 
-var App = React.createClass({
+App = React.createClass({
   getInitialState() {
     return {
       loading: false,
