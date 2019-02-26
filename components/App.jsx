@@ -15,7 +15,7 @@ App = React.createClass({
     // 1.Na wejście metody getGif przyjmujemy dwa parametry: wpisywany tekst (searchingText) i funkcję, która ma się wykonać po pobraniu gifa (callback).
     var url =
       GIPHY_API_URL +
-      "/v1/gifs/random?api_key=" +
+      "gifs/random?api_key=" +
       GIPHY_PUB_KEY +
       "&tag=" +
       searchingText; // 2.Konstruujemy adres URL dla API Giphy (pełną dokumentację znajdziesz pod tym adresem).
@@ -64,10 +64,9 @@ App = React.createClass({
       <div style={styles}>
         <h1> Wyszukiwarka GIFow! </h1>{" "}
         <p>
-          Znajdź gifa na <a href="http://giphy.com"> giphy </a> .Naciskaj
-          enter,aby pobrać kolejne gify.
+          Znajdź gifa na <a href="http://giphy.com"> giphy </a>. Naciśnij enter,
+          aby pobrać kolejne gify.
         </p>
-        ,
         <Search onSearch={this.handleSearch} />
         <Gif
           loading={this.state.loading}
